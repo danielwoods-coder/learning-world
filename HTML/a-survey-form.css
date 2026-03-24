@@ -1,0 +1,48 @@
+html {
+  background-color: white;
+}
+body {
+  background-color: rgba(253, 207, 0, 0.166);
+  width: 550px;
+  height: 100vh;
+  font-family: sans-serif;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+}
+p {
+  margin-left: 2px;
+}
+#name-label,
+#umber-label,
+#email-label {
+  display: inline-block;
+}
+fieldset {
+  margin: 10px 5px;
+  border: 1px solid;
+}
+legend {
+  font-style: italic;
+}
+label {
+  margin-left: 5px;
+}
+textarea {
+  display: block;
+  margin: 10px 5px;
+  border: 1px solid;
+}
+input[type="submit"] {
+  display: block;
+  margin: 50px auto;
+  background-color: whitesmoke;
+  font-size: 18px;
+  width: 80px;
+  height: 40px;
+}

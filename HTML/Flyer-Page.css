@@ -1,0 +1,17 @@
+body {
+  padding: 20px 0;
+  margin: auto;
+  width: 400px;
+  min-height: calc(100vh - 100px);
+  text-align: center;
+  border: 1px solid;
+}
+
+.sec {
+  width: 80%;
+  border: 2px solid red;
+  margin: 40px auto;
+}
+hr {
+  width: 80%;
+}

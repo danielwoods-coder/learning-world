@@ -1,0 +1,44 @@
+.form-container {
+  background-color: #baded7f5;
+  border-radius: 5px;
+  padding: 5px;
+  width: 360px;
+  margin: 20px auto;
+  border: 2px solid;
+}
+
+.part {
+  margin: 5px auto;
+  width: 90%;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+label {
+  color: rgb(12, 29, 93);
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 200px;
+  padding: 2px;
+}
+
+button {
+  display: block;
+  background-color: rgb(201, 216, 222);
+  border-radius: 3px;
+  margin: 5px auto;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rebeccapurple;
+}
