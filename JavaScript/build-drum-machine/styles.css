@@ -1,0 +1,50 @@
+body {
+  background-color: lightblue;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+#drum-machine {
+  width: 100%;
+  max-width: 500px;
+}
+#pad-bank {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.drum-pad {
+  height: 80px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+.drum-pad:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+#display {
+  text-align: center;
+  font-size: 1.5rem;
+  min-height: 2em;
+}
+
+@media (max-width: 400px) {
+  .drum-pad {
+    height: 70px;
+    font-size: 1.2rem;
+  }
+  #pad-bank {
+    gap: 8px;
+  }
+}

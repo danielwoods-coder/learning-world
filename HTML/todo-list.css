@@ -1,0 +1,39 @@
+a:link {
+  color: orchid;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+a:focus {
+  outline: 2px solid rgb(43, 71, 196);
+}
+
+a:active {
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  background-color: beige;
+  width: 50vw;
+  margin: 10px auto;
+  padding: 20px;
+  font-family: sans-serif serif;
+  line-height: 1.6;
+}
+h1 {
+  text-align: center;
+}
+.todo-list {
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+}

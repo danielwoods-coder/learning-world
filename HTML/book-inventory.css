@@ -1,0 +1,87 @@
+body {
+    
+    background-color: aliceblue;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: azure;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(22, 21, 21);
+}
+
+table {
+    margin: 10px auto;
+    width: 60vw;
+    border: solid;
+}
+
+thead tr {
+    background-color: #502753;
+    color: azure;
+}
+
+td {
+    text-align: center;
+}
+
+tr[class="read"] {
+    background-image: linear-gradient(rgb(56, 19, 19), rgb(29, 146, 31));
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(rgb(157, 38, 38), rgb(79, 172, 54));
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(rgb(95, 172, 118), rgb(117, 31, 31));
+}
+
+span {
+    display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+    border: 2px solid rgb(22, 20, 20);
+    background-image: linear-gradient(red, rgb(107, 155, 39));
+}
+
+tr[class="read"] span[class="status"] {
+    border: 2px solid silver;
+    background-image: linear-gradient(red, green);
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 2px solid snow;
+    background-image: radial-gradient(red, green);
+}
+
+span[class="status"],
+span[class^="rate"] {
+    height: 50%;
+    width: 80%;
+    text-align: center;
+}
+
+span[class^="rate"]>span {
+    border: 2px solid orchid;
+    border-radius: 5px;
+    margin: 2px;
+    height: 2rem;
+    width: 3rem;
+    background-color: aliceblue;
+}
+
+span[class~="one"] span:first-child {
+    background-image: linear-gradient(red, green);
+}
+
+span[class~="two"] span:first-child,
+span[class~="two"] span:nth-child(2) {
+    background-image: linear-gradient(red, green);
+}
+
+span[class~="three"] span {
+    background-image: linear-gradient(red, green);
+}

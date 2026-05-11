@@ -1,0 +1,40 @@
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+#img-div {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body {
+  background: rgba(220, 220, 220, 0.759);
+  color: #5c2828;
+  font-family: "Noto Serif SC", sans-serif;
+}
+
+main {
+  width: 60%;
+  margin: 20px auto;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#tribute-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blockquote {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
