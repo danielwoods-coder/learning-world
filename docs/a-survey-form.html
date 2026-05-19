@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="a-survey-form.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">假期调查表</h1>
+        <p id="description">*此表是为调查大学生假期生活的一些情况。</p>
+    </header>
+    <main>
+        <form id="survey-form">
+             <fieldset>
+                <legend>请填写个人信息：</legend>
+            <label id="name-label">姓名:</label><input id="name" type="text" required placeholder="小明" size="5">
+            <label id="number-label">年龄:</label><input id="number" type="number" placeholder="18.." min="16" max="25">
+            <label id="email-label">电子邮件:</label><input id="email" type="email" required placeholder="tom@example.com">
+           </fieldset>
+
+            <label for="dropdown">我对假期生活的满意度？</label>
+            <select id="dropdown">
+                <option value="">请选择一个选项</option>
+                <option value="bad">不满意</option>
+                <option value="so so">一般</option>
+                <option value="very satisfied">很满意</option>
+            </select>
+
+            <fieldset>
+                <legend>我最喜欢的菜</legend>
+                <input type="radio" value="tofu" name="food" id="tofu">
+                <label for="tofu">豆腐</label>
+
+                <input type="radio" value="fish" name="food" id="fish">
+                <label for="fish">鱼</label>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>我这个假期做了什么？</legend>
+                <input type="checkbox" value="movie" id="movie">
+                <label for="movie">看电影</label>
+                <input type="checkbox" value="code" id="code">
+                <label for="code">学编程</label>
+            </fieldset>
+
+
+
+            <label for="story">我还想说？</label>
+            <textarea id="story" rows="5" cols="33"></textarea>
+
+
+            <input type="submit" id="submit">
+
+        </form>
+    </main>
+</body>
+
+</html>

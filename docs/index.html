@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning World - HTML Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(124, 58, 237, 0.5);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .card-desc {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+        .card-badge {
+            font-size: 0.7rem;
+            background: linear-gradient(90deg, #7c3aed, #00d4ff);
+            padding: 4px 12px;
+            border-radius: 20px;
+            width: fit-content;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning World</h1>
+    <p class="subtitle">30 HTML & CSS Projects Collection</p>
+
+    <div class="grid">
+        <a href="a-contact-form.html" class="card">
+            <span class="card-title">Contact Form</span>
+            <span class="card-desc">Interactive contact form with styling</span>
+            <span class="card-badge">Forms</span>
+        </a>
+
+        <a href="a-survey-form.html" class="card">
+            <span class="card-title">Survey Form</span>
+            <span class="card-desc">Customer feedback survey page</span>
+            <span class="card-badge">Forms</span>
+        </a>
+
+        <a href="accessibility-quiz.html" class="card">
+            <span class="card-title">Accessibility Quiz</span>
+            <span class="card-desc">Web accessibility quiz form</span>
+            <span class="card-badge">A11y</span>
+        </a>
+
+        <a href="availability-table.html" class="card">
+            <span class="card-title">Availability Table</span>
+            <span class="card-desc">Schedule availability table</span>
+            <span class="card-badge">Table</span>
+        </a>
+
+        <a href="blog-post-card.html" class="card">
+            <span class="card-title">Blog Post Card</span>
+            <span class="card-desc">Blog article preview card</span>
+            <span class="card-badge">Cards</span>
+        </a>
+
+        <a href="book-inventory.html" class="card">
+            <span class="card-title">Book Inventory</span>
+            <span class="card-desc">Book catalog with table layout</span>
+            <span class="card-badge">Table</span>
+        </a>
+
+        <a href="build-a-book-catalog-table.html" class="card">
+            <span class="card-title">Book Catalog Table</span>
+            <span class="card-desc">Detailed book catalog display</span>
+            <span class="card-badge">Table</span>
+        </a>
+
+        <a href="build-a-checkout-page.html" class="card">
+            <span class="card-title">Checkout Page</span>
+            <span class="card-desc">E-commerce checkout flow</span>
+            <span class="card-badge">E-commerce</span>
+        </a>
+
+        <a href="build-a-travel-agency-page.html" class="card">
+            <span class="card-title">Travel Agency Page</span>
+            <span class="card-desc">Travel booking landing page</span>
+            <span class="card-badge">Marketing</span>
+        </a>
+
+        <a href="build-an-html-audio-and-video-player.html" class="card">
+            <span class="card-title">Media Player</span>
+            <span class="card-desc">HTML audio and video player</span>
+            <span class="card-badge">Media</span>
+        </a>
+
+        <a href="cafe-menu.html" class="card">
+            <span class="card-title">Cafe Menu</span>
+            <span class="card-desc">Coffee shop menu with pricing</span>
+            <span class="card-badge">Menu</span>
+        </a>
+
+        <a href="city-skyline.html" class="card">
+            <span class="card-title">City Skyline</span>
+            <span class="card-desc">Animated CSS skyline</span>
+            <span class="card-badge">CSS Animation</span>
+        </a>
+
+        <a href="color-markers.html" class="card">
+            <span class="card-title">Color Markers</span>
+            <span class="card-desc">Box model with colored markers</span>
+            <span class="card-badge">CSS</span>
+        </a>
+
+        <a href="colored-boxes.html" class="card">
+            <span class="card-title">Colored Boxes</span>
+            <span class="card-desc">Colorful box layout</span>
+            <span class="card-badge">CSS</span>
+        </a>
+
+        <a href="confidential-email-page.html" class="card">
+            <span class="card-title">Confidential Email</span>
+            <span class="card-desc">Email page styling</span>
+            <span class="card-badge">Email</span>
+        </a>
+
+        <a href="design-a-business-card.html" class="card">
+            <span class="card-title">Business Card</span>
+            <span class="card-desc">Digital business card design</span>
+            <span class="card-badge">Design</span>
+        </a>
+
+        <a href="design-a-movie-review-page.html" class="card">
+            <span class="card-title">Movie Review</span>
+            <span class="card-desc">Movie review page layout</span>
+            <span class="card-badge">Review</span>
+        </a>
+
+        <a href="feature-selection.html" class="card">
+            <span class="card-title">Feature Selection</span>
+            <span class="card-desc">Pricing plan selector</span>
+            <span class="card-badge">UI</span>
+        </a>
+
+        <a href="flappy-penguin.html" class="card">
+            <span class="card-title">Flappy Penguin</span>
+            <span class="card-desc">Animated CSS penguin</span>
+            <span class="card-badge">CSS Art</span>
+        </a>
+
+        <a href="flyer-page.html" class="card">
+            <span class="card-title">Flyer Page</span>
+            <span class="card-desc">Event flyer design</span>
+            <span class="card-badge">Marketing</span>
+        </a>
+
+        <a href="house-painting.html" class="card">
+            <span class="card-title">House Painting</span>
+            <span class="card-desc">House painting service page</span>
+            <span class="card-badge">Service</span>
+        </a>
+
+        <a href="lab-event-hub.html" class="card">
+            <span class="card-title">Lab Event Hub</span>
+            <span class="card-desc">Laboratory event listing</span>
+            <span class="card-badge">Events</span>
+        </a>
+
+        <a href="moon-orbit.html" class="card">
+            <span class="card-title">Moon Orbit</span>
+            <span class="card-desc">CSS animation of lunar orbit</span>
+            <span class="card-badge">CSS Animation</span>
+        </a>
+
+        <a href="newspaper-article.html" class="card">
+            <span class="card-title">Newspaper Article</span>
+            <span class="card-desc">Traditional newspaper layout</span>
+            <span class="card-badge">Layout</span>
+        </a>
+
+        <a href="newspaper-layout.html" class="card">
+            <span class="card-title">Newspaper Layout</span>
+            <span class="card-desc">Multi-column newspaper</span>
+            <span class="card-badge">Layout</span>
+        </a>
+
+        <a href="playing-cards.html" class="card">
+            <span class="card-title">Playing Cards</span>
+            <span class="card-desc">Card game UI elements</span>
+            <span class="card-badge">Game</span>
+        </a>
+
+        <a href="product-landing.html" class="card">
+            <span class="card-title">Product Landing</span>
+            <span class="card-desc">Product marketing page</span>
+            <span class="card-badge">Marketing</span>
+        </a>
+
+        <a href="technical-documentation.html" class="card">
+            <span class="card-title">Technical Documentation</span>
+            <span class="card-desc">API documentation page</span>
+            <span class="card-badge">Docs</span>
+        </a>
+
+        <a href="todo-list.html" class="card">
+            <span class="card-title">Todo List</span>
+            <span class="card-desc">Task management UI</span>
+            <span class="card-badge">UI</span>
+        </a>
+
+        <a href="tribute-page.html" class="card">
+            <span class="card-title">Tribute Page</span>
+            <span class="card-desc">Profile tribute page</span>
+            <span class="card-badge">Profile</span>
+        </a>
+    </div>
+
+    <footer>
+        <p>30 HTML/CSS Projects | Learning World</p>
+    </footer>
+</body>
+</html>
