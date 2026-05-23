@@ -51,7 +51,19 @@ Learning-World/
 
 ### JavaScript (46 个)
 
-算法、交互式 UI、实用工具等。
+| 项目 | 说明 |
+|------|------|
+| algorithms/build-a-gradebook-app.js | 成绩册应用 |
+| algorithms/password-generator.js | 密码生成器 |
+| algorithms/quiz-game.js | 测验游戏 |
+| bookmark-manager/script.js | 书签管理器 |
+| build-a-palindrome-checker/script.js | 回文检查器 |
+| build-drum-machine/script.js | 架子鼓机器 |
+| lightbox-viewer/script.js | 灯箱查看器 |
+| markdown-to-html/script.js | Markdown 转 HTML |
+| theme-switcher/Theme-Switcher.js | 主题切换器 |
+
+还有更多算法和实用工具...
 
 ### Python (13 个)
 
