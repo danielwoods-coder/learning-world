@@ -3,43 +3,92 @@
 }
 
 body {
-  background-color: #d8e3e3;
+  background-color: #1a472a;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #playing-cards {
-  height: 600px;
-  width: 80vw;
-  margin: 10px auto;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 20px;
 }
 
 .card {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   width: 160px;
   height: 250px;
   border: 2px solid #09101cda;
   background-color: whitesmoke;
+  border-radius: 12px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
-.left {
-  align-self: flex-start;
-  scale: calc(1.5);
-  transform: translate(3px, 1px);
-}
-
-.middle {
-  align-self: center;
-  scale: calc(4 / 3);
+.corner {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: bold;
+  color: inherit;
+  gap: 2px;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
-.right {
-  align-self: flex-end;
-  transform: translate(-0.5px);
+.corner.top-left {
+  float: left;
+}
+
+.corner.bottom-right {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  transform: rotate(180deg);
+}
+
+.suit {
+  font-size: 1.2em;
+  color: inherit;
+}
+
+.center-suit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 72px;
+  color: inherit;
+}
+
+/* Black suits (spades, clubs) */
+.card:not(.hearts):not(.diamonds) .corner,
+.card:not(.hearts):not(.diamonds) .center-suit {
+  color: #1a1a1a;
+}
+
+.card.clubs .suit,
+.card:not(.hearts):not(.diamonds) .suit {
+  color: inherit;
+}
+
+/* Red suits (hearts, diamonds) */
+.card.hearts .corner,
+.card.hearts .center-suit,
+.card.diamonds .corner,
+.card.diamonds .center-suit {
+  color: #c41e3a;
+}
+
+.card.hearts .suit,
+.card.diamonds .suit {
+  color: inherit;
 }

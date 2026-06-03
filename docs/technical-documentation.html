@@ -1,83 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8" />
-    <title>Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>技术文档页面</title>
     <link rel="stylesheet" href="technical-documentation.css">
 </head>
 
 <body>
 
     <nav id="navbar">
-        <header>This is a document introducing HTML&CSS</header>
-        <a href="#html" class="nav-link">HTML</a>
-        <a href="#element" class="nav-link">Element</a>
-        <a href="#attribute" class="nav-link">Attribute</a>
-        <a href="#X" class="nav-link">X</a>
-        <a href="#XX" class="nav-link">XX</a>
+        <header>HTML & CSS 文档</header>
+        <a href="#introduction" class="nav-link">简介</a>
+        <a href="#html-elements" class="nav-link">元素</a>
+        <a href="#attributes" class="nav-link">属性</a>
+        <a href="#css-basics" class="nav-link">CSS 基础</a>
+        <a href="#best-practices" class="nav-link">最佳实践</a>
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="html">
-            <header>HTML</header>
-            <p>HTML is the standard markup language for Web pages.
-
-                With HTML you can create your own Website.</p>
-            <code></code>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus ex arcu, eget accumsan nibh
-                convallis quis. In metus mauris, imperdiet a ante eget, convallis eleifend leo. Phasellus at aliquam
-                purus, sit amet semper ante. Curabitur tristique placerat magna. Curabitur commodo eros et sem rhoncus
-                rhoncus. Aenean vel imperdiet nibh. Phasellus faucibus nisi vel diam lacinia, vel rutrum libero
-                accumsan.</p>
+        <section class="main-section" id="introduction">
+            <header>简介</header>
+            <p>HTML（超文本标记语言）是用于创建网页的标准标记语言。使用 HTML 你可以构建自己的网站。</p>
+            <p>HTML 从语义上描述网页的结构，最初也包含了对文档外观的提示。</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-CN"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;页面标题&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;你好世界&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>CSS（层叠样式表）用于为网页添加样式和布局。例如，你可以使用 CSS 控制字体、颜色、间距以及 HTML 元素的整体视觉呈现。</p>
         </section>
-        <section class="main-section" id="element">
-            <header>Element</header>
-            <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
-            <code></code>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus ex arcu, eget accumsan nibh
-                convallis quis. In metus mauris, imperdiet a ante eget, convallis eleifend leo. Phasellus at aliquam
-                purus, sit amet semper ante. Curabitur tristique placerat magna. Curabitur commodo eros et sem rhoncus
-                rhoncus. Aenean vel imperdiet nibh. Phasellus faucibus nisi vel diam lacinia, vel rutrum libero
-                accumsan.</p>
+        <section class="main-section" id="html-elements">
+            <header>HTML 元素</header>
+            <p>HTML 元素由开始标签、内容和结束标签组成。HTML 元素是网页的构建块。</p>
+            <pre><code>&lt;标签名&gt;这里是内容...&lt;/标签名&gt;</code></pre>
+            <p>以下是一些常见的 HTML 元素：</p>
             <ul>
-                <li></li>
-                <li></li>
+                <li><strong>&lt;header&gt;</strong> - 表示介绍性内容，通常是一组介绍性或导航性辅助内容</li>
+                <li><strong>&lt;nav&gt;</strong> - 表示文档中提供导航链接的部分</li>
+                <li><strong>&lt;main&gt;</strong> - 指定文档的主要内容</li>
+                <li><strong>&lt;section&gt;</strong> - 定义文档中的章节</li>
+                <li><strong>&lt;p&gt;</strong> - 定义段落</li>
+                <li><strong>&lt;code&gt;</strong> - 以等宽字体显示内容，用于内联代码片段</li>
             </ul>
         </section>
-        <section class="main-section" id="attribute">
-            <header>Attribute</header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus ex arcu, eget accumsan nibh
-                convallis quis. In metus mauris, imperdiet a ante eget, convallis eleifend leo. Phasellus at aliquam
-                purus, sit amet semper ante. Curabitur tristique placerat magna. Curabitur commodo eros et sem rhoncus
-                rhoncus. Aenean vel imperdiet nibh. Phasellus faucibus nisi vel diam lacinia, vel rutrum libero
-                accumsan.</p>
-            <code></code>
-            <p></p>
+        <section class="main-section" id="attributes">
+            <header>HTML 属性</header>
+            <p>属性为 HTML 元素提供额外信息。它们总是在开始标签中指定，以名称/值对的形式出现。</p>
+            <pre><code>&lt;a href="https://example.com"&gt;点击这里&lt;/a&gt;</code></pre>
+            <p>常用属性包括：</p>
+            <ul>
+                <li><strong>href</strong> - 指定链接指向的页面 URL</li>
+                <li><strong>src</strong> - 指定图像的路径</li>
+                <li><strong>alt</strong> - 为图像指定替代文本</li>
+                <li><strong>class</strong> - 为元素指定一个或多个类名</li>
+                <li><strong>id</strong> - 为元素指定唯一的 id</li>
+                <li><strong>style</strong> - 为元素指定内联 CSS 样式</li>
+            </ul>
         </section>
-        <section class="main-section" id="X">
-            <header>X</header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus ex arcu, eget accumsan nibh
-                convallis quis. In metus mauris, imperdiet a ante eget, convallis eleifend leo. Phasellus at aliquam
-                purus, sit amet semper ante. Curabitur tristique placerat magna. Curabitur commodo eros et sem rhoncus
-                rhoncus. Aenean vel imperdiet nibh. Phasellus faucibus nisi vel diam lacinia, vel rutrum libero
-                accumsan.</p>
-            <code></code>
-            <p></p>
+        <section class="main-section" id="css-basics">
+            <header>CSS 基础</header>
+            <p>CSS 用于为 HTML 元素添加样式。CSS 规则由选择器和声明块组成。</p>
+            <pre><code>选择器 {
+    属性: 值;
+}</code></pre>
+            <p>CSS 选择器用于"查找"（或选择）你要设置样式的 HTML 元素。常用选择器包括：</p>
+            <ul>
+                <li><strong>元素</strong> - 按标签名选择所有元素</li>
+                <li><strong>#id</strong> - 按 id 属性选择元素</li>
+                <li><strong>.class</strong> - 选择具有特定类的所有元素</li>
+            </ul>
+            <p>CSS 盒模型：网页设计中的每个元素都是一个矩形盒子，具有外边距（margin）、边框（border）、内边距（padding）和内容（content）属性。</p>
         </section>
-        <section class="main-section" id="XX">
-            <header>XX</header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus ex arcu, eget accumsan nibh
-                convallis quis. In metus mauris, imperdiet a ante eget, convallis eleifend leo. Phasellus at aliquam
-                purus, sit amet semper ante. Curabitur tristique placerat magna. Curabitur commodo eros et sem rhoncus
-                rhoncus. Aenean vel imperdiet nibh. Phasellus faucibus nisi vel diam lacinia, vel rutrum libero
-                accumsan.</p>
-            <code></code>
+        <section class="main-section" id="best-practices">
+            <header>最佳实践</header>
+            <p>编写 HTML 和 CSS 时请遵循以下最佳实践：</p>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>始终声明正确的 DOCTYPE 以确保标准兼容渲染</li>
+                <li>使用语义化 HTML 元素（&lt;nav&gt;、&lt;main&gt;、&lt;article&gt;）以提高可访问性和 SEO</li>
+                <li>将 CSS 保持在单独的文件中，而非内联样式，以提高可维护性</li>
+                <li>为图像使用有意义的 alt 文本来提高可访问性</li>
+                <li>使用 W3C 验证器验证你的 HTML</li>
+                <li>使用响应式设计技术确保你的网站在所有设备上都能正常工作</li>
             </ol>
-            <p></p>
         </section>
     </main>
 </body>
