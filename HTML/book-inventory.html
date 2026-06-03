@@ -9,15 +9,15 @@
 </head>
 
 <body>
-    <h1>Book Inventory</h1>
+    <h1>图书清单</h1>
     <table>
         <thead>
             <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Category</th>
-                <th>Status</th>
-                <th>Rate</th>
+                <th>书名</th>
+                <th>作者</th>
+                <th>分类</th>
+                <th>状态</th>
+                <th>评分</th>
 
             </tr>
         </thead>
@@ -26,22 +26,43 @@
                 <td>时间简史</td>
                 <td>霍金</td>
                 <td>科学</td>
-                <td><span class="status">Read</span></td>
+                <td><span class="status">已读</span></td>
                 <td><span class="rate three"><span></span><span></span><span></span></span></td>
             </tr>
+            <tr class="read">
+                <td>人类简史</td>
+                <td>尤瓦尔·赫拉利</td>
+                <td>历史</td>
+                <td><span class="status">已读</span></td>
+                <td><span class="rate two"><span></span><span></span><span></span></span></td>
+            </tr>
             <tr class="to-read">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="status">To Read</span></td>
+                <td>三体</td>
+                <td>刘慈欣</td>
+                <td>科幻</td>
+                <td><span class="status">待读</span></td>
+                <td><span class="rate one"><span></span><span></span><span></span></span></td>
+            </tr>
+            <tr class="to-read">
+                <td>百年孤独</td>
+                <td>加西亚·马尔克斯</td>
+                <td>文学</td>
+                <td><span class="status">待读</span></td>
+                <td><span class="rate"><span></span><span></span><span></span></span></td>
+            </tr>
+            <tr class="in-progress">
+                <td>计算之魂</td>
+                <td>吴军</td>
+                <td>计算机</td>
+                <td><span class="status">在读</span></td>
                 <td><span class="rate two"><span></span><span></span><span></span></span></td>
             </tr>
             <tr class="in-progress">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="status">In Progress</span></td>
-                <td><span class="rate two"><span></span><span></span><span></span></span></td>
+                <td>设计的觉醒</td>
+                <td>田中一光</td>
+                <td>设计</td>
+                <td><span class="status">在读</span></td>
+                <td><span class="rate one"><span></span><span></span><span></span></span></td>
             </tr>
         </tbody>
     </table>
