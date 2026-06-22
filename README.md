@@ -117,4 +117,4 @@ python <filename>.py
 
 - 文件命名使用描述性名称，连字符分隔（如 `cafe-menu.html`）
 - HTML/CSS/JS 配对文件共享相同基名
-- JavaScript 使用 ESLint 配置
+- JavaScript 目前没有检入 ESLint 配置；如需 lint，请先在 `JavaScript/` 下添加配置
