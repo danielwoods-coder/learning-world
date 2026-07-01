@@ -26,15 +26,4 @@ INT {intelligence * full_dot + (10 - intelligence) * empty_dot}
 CHA {charisma * full_dot + (10 - charisma) * empty_dot}"""
 
 
-print(create_character("Alice", 4, 3, 1))
-
-
-def number_pattern(n):
-    if not isinstance(n, int) or isinstance(n, bool):
-        return "Argument must be an integer value."
-    if n < 1:
-        return "Argument must be an integer greater than 0."
-    return " ".join(str(i) for i in range(1, n + 1))
-
-
-print(number_pattern(True))
+print(create_character("Alice", 4, 2, 1))
